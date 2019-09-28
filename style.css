@@ -1,0 +1,376 @@
+@font-face{
+    font-family: "PT Sans";
+    src: url('../theyalow/assets/fonts/pt-sans/PTS55F.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "PT Sans - Narrow Bold";
+    src: url('../theyalow/assets/fonts/pt-sans/PTN77F.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url('../theyalow/assets/fonts/open-sans/OpenSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Segoe WP";
+    src: url('../theyalow/assets/fonts/segoe-wp-light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* body {
+    width: 1300px;
+    height: 2420px;
+    background: url(assets/Layer_20.png) no-repeat center top; 
+}
+header{
+    width: 100%;
+    height: 168px;
+}
+.navigation {
+    width: 453px;
+    height: 41px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5c506;
+    background-image: linear-gradient(to top, #00000000 0%, #ffffff00 100%);
+}
+li {
+    height: 14px;
+    color: #9b7d08;
+    font-family: "Segoe WP";
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.17px;
+    display: inline;
+} 
+.logo-about {
+    width: 21px;
+    height: 19px;
+    color: #b99403;
+    background: url(assets/Shape_5.svg) no-repeat center;
+    padding-left: 50%;
+}
+.logo-services {
+    width: 19px;
+    height: 19px;
+    color: #b99403;
+    background: url(assets/Shape_6.svg) no-repeat center;
+    padding-left: 50%;
+}
+.logo-contact {
+    width: 24px;
+    height: 18px;
+    color: #b99403;
+    background: url(assets/Shape_7.svg) no-repeat center;
+    padding-left: 50%;
+}
+
+ */
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 1300px;
+    height: 1847px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a {
+    color: #000 !important;
+    text-decoration: none;
+}
+/*--------------------HEADER---------------*/
+header {
+    position: relative;
+    display: flex;
+    padding: 0 140px;
+    width: 100%;
+    height: 566px;
+    background: url(assets/Layer_20.png) no-repeat top center;
+}
+.main-logo {
+    position: relative;
+    top: 28px;
+    width: 83px;
+    height: 83px;
+    background: url(assets/Shape_8_copy_3.svg) no-repeat center;
+}
+.backgr-logo {
+    position: static;
+    top: 0px;
+    width: 80px;
+    height: 80px;
+    background: url(assets/Shape_8_copy_4.svg) no-repeat center;
+}
+.main-text{
+    position: relative;
+    top: 51px;
+    left: 4px;
+    width: 225px;
+    height: 30px;
+    text-shadow: 0 2px 0 #0000006b;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-size: 41px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.41px;
+}
+.navigation {
+    position: relative;
+    width: 453px;
+    height: 41px;
+    top: 71px;
+    left: 259px;
+    background-color: #f5c506;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.first {
+    position: absolute;
+    top: 66px;
+    left: 703px;
+    opacity: 0.27;
+}
+.second {
+    position: absolute;
+    top: 63px;
+    left: 699px;
+    opacity: 0.27;
+} 
+/*-----------------MAIN-----------------------*/
+ main {
+    position: relative;
+    width: 100%;
+    height: 1217px;
+}
+.first-section {
+    width: 100%;
+    height: 212px;
+    background: url(assets/Layer_7.png) no-repeat;
+}
+/* ---2nd section--- */
+.second-section {
+    width: 100%;
+    height: 508px;
+    padding: 0 139px;
+    background: url(assets/bg-y.png) no-repeat;
+}
+.second-section h2 {     /* Text style for "Lorem ipsu" */
+    position: relative;
+    display: inline;
+    top: 31px;
+    left: 1px;
+    width: 517px;
+    height: 28px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.37px;
+}
+.content {
+    position: relative;
+    display: flex;
+    /* justify-content: flex-start; */
+    top: 62px;
+    width: 1020px;
+    height: 233px;
+}
+.last-news {
+    position: relative;
+    width: 341px;
+    height: 233px;
+    background-color: #ec9e03;
+}
+.last-news p {
+    margin-top: 15px;
+    margin-left: 31px;
+    width: 280px;
+    height: 174px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-size: 29px;
+    font-weight: 100;
+    line-height: 38px;
+    letter-spacing: 0.29px;
+}
+.last-news a {
+    position: relative;
+    display: block;
+    width: 11px;
+    height: 11px;
+    left: 316px;
+    bottom: -20px;
+    background: url(assets/Shape_11_copy.svg) no-repeat center;
+}
+.content video {
+    position: relative;
+    display: block;
+    bottom: 1px;
+}
+#video-button {
+    outline-style: none;
+    border: none;
+    position: absolute;
+    display: block;
+    width: 61px;
+    height: 61px;
+    background-color: rgba(245, 197, 6, 0.72);
+    border-radius: 50%;
+}
+#video-button img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 40%;
+}
+.slider-video-button {
+    left: 471px;
+    top: 93px;
+}
+.comment-in-twitt {
+    position: relative;
+    display: block;
+    left: 34px;
+    width: 329px;
+    height: 233px;
+    background-color: #ec9e03;
+}
+.comment-in-twitt img {
+    position: relative;
+    display: block;
+    left: 83px;
+    top: 59px;
+}
+
+/* ---3rd section--- */
+.third-section {
+    width: 100%;
+    height: 497px;
+    background: url(assets/Layer_32.png) no-repeat;
+}
+.third-section h2 {     /* Text style for "Lorem ipsu" */
+    position: relative;
+    display: inline;
+    top: 35px;
+    left: 350px;
+    width: 601px;
+    height: 31px;
+    color: #f5c506;
+    font-family: "PT Sans";
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.43px;
+} 
+.icon-images {
+    position: relative;
+    top: 81px;
+    left: 158px;
+    width: 543px;
+    height: 255px;
+}
+.icon-tabel {
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+}
+.icon-mobile {
+    position: relative;
+    bottom: 40px;
+    left: 41px;
+}
+.circle {
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 116px;
+    top: -217px;
+    left: 138px;
+    background-color: #f5c506;
+    border-radius: 50%;
+}
+.circle span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 1.5px;
+    left: 1px;
+    color: #ffffff;
+    font-family: "PT Sans - Narrow Bold";
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05px;
+}
+.list-random {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    left: 811px;
+    top: -265px;
+    width: 500px;
+    height: 184px;
+}
+.list-random li {
+    position: relative; 
+    width: 400px;
+    height: 22px;
+    margin-top: 26px;
+    list-style-type: none;
+    color: #a9a9a7;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.22px;
+}
+.list-random li::before {
+    content: ' ';
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-left: -33px;
+    margin-bottom: -22px;
+    background-color: #f5c506;
+    border-radius: 50%;
+}
+.list-random li:nth-child(2n) {
+    margin-top: 28px;
+    line-height: 26px;
+    margin-bottom: 18px;
+}
+.list-random li:nth-child(2n)::before {
+    margin-bottom: -22px;
+}
+.list-random li:nth-child(3)::before {
+    margin-bottom: -24px;
+}
+.list-random li:nth-child(4) {
+    margin-top: 29px;
+}
+.list-random li span {
+    font-family: "PT Sans";
+}
+/*-----------------FOOTER---------------*/
+footer {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background-color: #4c4c4c;
+    box-shadow: 0 -2.5px 5px #000000bf;
+}
