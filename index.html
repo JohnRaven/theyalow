@@ -8,20 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> 
+    <header>
         <div class="main-logo"><span class="backgr-logo"></span></div>
-        <span class="main-text">theyalow</span>
+        <h1 class="main-text">theyalow</h1>
+        <span class="navigation first"></span>
+        <span class="navigation second"></span>
         <nav class="navigation">
             <ul class="list">
                 <li class="logo-about">about us</li>
                 <li class="logo-services">services</li>
                 <li class="logo-contact">contact</li>
             </ul>
+            <span class="borders"></span>
         </nav>
-        <span class="navigation first"></span>
-        <span class="navigation second"></span>
+        <div class="video-header">
+            <video src="#" poster="assets/Layer_17.png"></video>
+            <span class="video-filter"></span>
+            <button id="start-video-button" class="slider-video-button">      <!-- id для замены кнопки управления в JS -->
+                <img src="assets/Shape_10_copy.png" alt="кнопка воспроизведения">
+            </button>
+            <div class="controls">
+                <button class="button-play">
+                    <img src="assets/Shape_8.png" alt="play">
+                </button>
+                <div class="scroll">
+                    <span></span>
+                </div>
+                <button class="button-sound">
+                    <img src="assets/Shape_9.svg" alt="sound">
+                </button>
+            </div>
+        </div>
+        <p class="slogan">
+            <span>The cool</span>
+            <span>The minimal</span>
+        </p>
+        <button class="button-slider-header left"><img src="assets/Shape_1_copy.svg" alt="вперед"></button>
+        <button class="button-slider-header right"><img src="assets/Shape_1_copy.svg" alt="назад"></button>
     </header>
-    
     <main> 
         <section class="first-section shadow-up-down">
             <div class="container">
@@ -45,7 +69,7 @@
                     <a href="#" target="_blank" class="plus"></a>
                 </div>
                 <video src="#" poster="assets/Layer_25.png"></video>
-                <button id="video-button" class="slider-video-button">  <!-- id для замены кнопки управления в JS -->
+                <button id="video-button" class="slider-video-button content-button">  <!-- id для замены кнопки управления в JS -->
                     <img src="assets/Shape_10_copy.png" alt="кнопка воспроизведения" >
                 </button>
                 <div class="comment-in-twitt">
@@ -59,7 +83,7 @@
                 <span class="month">april</span>
             </div>
             <div class="scroll">
-                <div draggable="true" class="drag"></div>
+                <div class="drag"></div>
             </div>
         </section>
         <section class="third-section">
@@ -80,6 +104,9 @@
             </ul>
         </section>
     </main>
-    <footer> </footer>
+    <footer> 
+        <div class="main-logo footer-logo"><span class="backgr-logo"></span></div>
+        <span class="main-text footer-text">theyalow</span>
+    </footer>
 </body>
 </html>
