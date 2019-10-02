@@ -34,6 +34,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "Arial MT";
+    src: url('assets/fonts/ArialMT.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *{
     padding: 0;
@@ -451,6 +457,9 @@ header {
     line-height: 38px;
     letter-spacing: 0.29px;
 }
+.hyphen-mobile {
+    display: none;
+}
 .plus {
     position: relative;
     display: block;
@@ -566,7 +575,10 @@ header {
     background-color: #ec9e03;
     border-radius: 7.5px;
 } 
-
+.form-tweet {
+    display: none;
+    visibility: hidden;
+}
 /* ---3rd section--- */
 .third-section {
     width: 100%;
@@ -709,9 +721,7 @@ footer {
     .second-section h2, .day,  
     .third-section .scroll, .drag,
     .day, .month, .comment-in-twitt span,
-    .comment-in-twitt a,
-
-    .third-section, footer {
+    .comment-in-twitt a, .list-random {
         display: none;
         visibility: hidden;
         background-color: none;
@@ -916,6 +926,12 @@ footer {
         line-height: 33.9px;
         letter-spacing: 0.33px;
     }
+    .hyphen-mobile {
+        display: contents;
+    }
+    .hyphen-desctop {
+        display: none;
+    }
     .plus {
         position: absolute;
         width: 11px;
@@ -954,9 +970,138 @@ footer {
         background-color: none;
         display: none;
     }
+    .form-tweet {
+        position: relative;
+        display: block;
+        visibility: visible;
+        width: 323px;
+        height: 233px;
+        left: 317px;
+        top: -133px;
+    }
+    .form-tweet form {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 269px;
+        height: 29px;
+        bottom: 11px;
+        left: 20px;
+        box-shadow: inset 3px 4px 5px rgba(0, 0, 0, 0.11);
+        border: 1px solid #d0a806;
+        background-color: #ffffff;
+        border-radius: 11px;
+    }
+    .send-button {
+        outline-style: none;
+        border: none;
+        position: absolute;
+        left: 196px;
+        top: -10px;
+        width: 77px;
+        height: 49px;
+        background: url(assets/Layer_35.png) no-repeat center;
 
-
- 
-    
+        color: #ffffff;
+        font-family: "Arial MT";
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.15px;
+        padding-right: 4px;
+    }
+    .send-message {
+        outline-style: none;
+        border: none;
+        position: absolute;
+        display: flex;
+        width: 180px;
+        height: 23px;
+        top: 1px;
+        left: 10px;
+        padding-top: 3px;
+        justify-content: center;
+        background: none;
+    }
+    .text-message {
+        position: relative;
+        display: flex;
+        width: 230px;
+        height: 28px;
+        left: 34px;
+        top: 30px;
+        color: #8f8e8e;
+        font-family: "Arial MT";
+        font-size: 13px;
+        font-weight: 100;
+        letter-spacing: 0.13px;
+        z-index: 3;
+    }
+    .form-tweet p:nth-child(2){
+        top: 59px;
+    }
+    .form-tweet p:nth-child(3) {
+        top: 87px;
+    }
+    .text-message::after {
+        content: "";
+        background: url(assets/Rounded_Rectangle_2.png);
+        opacity: 1;
+        width: 285px;
+        height: 42px;
+        top: -6px;
+        left: -27px;
+        position: absolute;
+        z-index: -1;
+    } 
+    .text-message:nth-child(2)::after {
+        opacity: 0.7;
+    }
+    .text-message:nth-child(3)::after {
+        opacity: 0.6;
+    }
+    .scroll {
+        display: none;
+    }
     /* ---3rd section--- */
+     .third-section {
+        width: 640px;
+        height: 466px;
+        background: none;
+        background-color: #474747;
+    }
+    .third-section h2 {     
+        position: relative;
+        display: inline;
+        top: 30px;
+        left: 18px;
+        font-family: "Open Sans";
+        font-size: 39px;
+        letter-spacing: 0.39px;
+    } 
+    .icon-images {
+        top: 103px;
+        left: 57px;
+    }
+    .circle {
+        top: -193px;
+        left: 27px;
+    }
+    /* ---FOOTER_FOR -MOBILE VERSION--- */
+    footer {
+        width: 640px;
+        height: 44px;
+        left: 0px;
+        top: 474px;
+    } 
+    .footer-logo {
+        transform: scale(0.37);
+        left: 39px;
+        top: -20px;
+    }
+    .footer-text {
+        top: 12px;
+        left: 104.5px;
+        font-size: 17px;
+        letter-spacing: -0.1px;
+    } 
 }
